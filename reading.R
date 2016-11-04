@@ -1,3 +1,11 @@
+
+library(purrr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(lubridate)
+library(readr)
+
 ## get data
 
 library(rdrop2)
@@ -20,6 +28,24 @@ dat <- rexcel::rexcel_read_workbook("raw-data/Cardoso2008_WGformat_correct.xlsx"
 dat %>% class
 
 
+# helper functions --------------------------------------------------------
+
+matrix_to_df_firstline_header <- function(mat){
+  requireNamespace("purrr")
+  
+  mat %>% 
+    ## cut columns into lists
+    apply(2, function(s) list(s)) %>% 
+    flatten %>% 
+    map(flatten_chr) %>% 
+    ## set names to the first element of the list
+    {set_names(x = map(., ~ .x[-1]),
+               nm = map_chr(., 1))} %>% 
+    ## create data.frames
+    as.data.frame(stringsAsFactors = FALSE)
+}
+
+
 
 # environmental values ----------------------------------------------------
 
@@ -28,10 +54,6 @@ dat$sheets[[3]]
 
 ## values?
 
-library(purrr)
-library(dplyr)
-library(tidyr)
-library(stringr)
 
 dat$sheets$`Environmental data`$cells %>% select(ref, value) %>% mutate(val = map(value, as.numeric)) %>% unnest(val) %>% View
 
@@ -48,20 +70,97 @@ env_df_long <- env_df %>%
   map_at("obs", ~ .x %>% 
            ## drop blank lines
            .[-(2:3),] %>% 
-           ## cut columns into lists
-           apply(2, function(s) list(s)) %>% flatten %>% map(flatten_chr) %>% 
-           ## set names to the first element of the list
-           {set_names(x = map(., ~ .x[-1]),
-                      nm = map_chr(., 1))} %>% 
-           ## create data.frames
-           as.data.frame
-  )
+           matrix_to_df_firstline_header)
 
 
-env_df_long$obs %>% map(flatten_chr) %>% as.data.frame() %>% glimpse
+## where are the cells
+dat$sheets$`Environmental data`$cells 
 
-%>% as.data.frame)
+dat$sheets$`Environmental data`$lookup
 
-matrix(1:4, nrow = 2) %>% apply(2, function(s) list(s)) %>% map(flatten_chr) %>% {set_names(x = map(., ~ .x[-1]),
-                                                                                   nm = map_chr(., 1))}
-  {split(1:2)
+## cut out the values that are giving me greif:
+dat$sheets$`Environmental data`$values()[2,2:28] ## looks good
+positions_of_bad_dates <- dat$sheets$`Environmental data`$lookup[2,2:28]
+
+dat$sheets$`Environmental data`$cells[positions_of_bad_dates,]$value
+
+## date therapy
+
+env_df_long_dates <- env_df_long$obs %>% 
+  mutate(Date = ifelse(Date == "17 Jan 207", "17 Jan 2008", Date),
+         date_lubr = dmy(Date) ,
+         date_exel = ifelse(is.na(date_lubr), as.numeric(Date), NA),
+         from_exel = ymd("1899-12-30") + date_exel,
+         collection_date = if_else(is.na(date_lubr), ymd(from_exel), ymd(date_lubr))) %>% 
+  ## some dates are in the wrong year
+  mutate(collection_date_fix_yr = if_else(collection_date < ymd("2008-01-01"), collection_date + years(1), collection_date)) %>% 
+  ## and some are written in an incorrect format
+  mutate(collection_date_corrected = if_else(collection_date_fix_yr > ymd("2008-03-01"), ydm(as.character(collection_date_fix_yr)), collection_date_fix_yr)) %>% 
+  select(-date_lubr, -date_exel, -from_exel, -collection_date, -collection_date_fix_yr, -Date)
+
+
+# fix column names & types --------------------------------------------------------
+
+env_final <- env_df_long_dates %>% 
+  rename(Bromeliad = NA.,
+         Spider_survey  = Spider.survey.) %>%
+         {set_names(., names(.) %>% str_replace("\\.\\..*\\.", ""))}%>% 
+         {set_names(., names(.) %>% str_replace_all("\\.", "_"))} %>% 
+  mutate_each(funs(as.numeric), Actual_volume:Plant_diameter)
+
+write_csv(env_final, "data/environmental_variables.csv")
+
+
+
+# insects -----------------------------------------------------------------
+
+## look at it
+dat$sheets$`Fauna - full`$sheet
+
+## only to 151 is any good
+
+insect_df <- dat$sheets$`Fauna - full`$values() %>% 
+  .[1:151,] %>% 
+  matrix_to_df_firstline_header() %>% 
+  mutate(sp_code = paste0("sp_",seq_along(Biomass.avg.sp)))
+
+
+## combine comments with species names
+
+insect_comments <- dat$sheets$`Fauna - full`$comments %>% 
+  mutate(text = text %>% str_replace("Auteur importé:\\nDiane Srivastava:\\n", ""))
+
+## pull out, then slap on, the positions of the commented cells
+insect_df_comments <- insect_df %>% 
+  select(sp_code, NA.:Biomass.avg.sp) %>% 
+  mutate(Dcol_pos = dat$sheets$`Fauna - full`$lookup[2:151,4]) %>% 
+  ## put in cell refs
+  mutate(ref = dat$sheets$`Fauna - full`$cells$ref[Dcol_pos]) %>% 
+  #left join comments
+  left_join(insect_comments %>% select(-author, -shape_id))
+
+insect_names_final <- insect_df_comments %>% 
+  rename(long_name = NA.,
+         short_name = NA..1,
+         life_stage_size = NA..2,
+         comment = text,
+         average_percapita_biomass = Biomass.avg.sp) %>% 
+  select(-Dcol_pos, -ref) %>% 
+  mutate(average_percapita_biomass = as.numeric(average_percapita_biomass)) %>% 
+  fill(long_name)
+
+
+insect_names_final %>% 
+  write_csv("data/insect_names_final.csv")
+
+# finally the abundance data ----------------------------------------------
+
+insect_abundances <- insect_df %>% 
+  select(sp_code, starts_with("Brom")) %>% 
+  gather(Bromeliad, abundance, starts_with("Brom")) %>% 
+  filter(!is.na(abundance)) %>% 
+  mutate(abundance = as.numeric(abundance)) %>% 
+  filter(abundance > 0)
+
+insect_abundances %>% 
+  write_csv("data/abundance.csv")
