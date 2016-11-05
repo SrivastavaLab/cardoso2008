@@ -138,7 +138,7 @@ insect_df_filled_formulae <- insect_df_comments %>%
   # clean up
   select(-form, -filled_form)
 
-insect_names_final <- insect_df_filled_formulae %>% 
+insect_renamed <- insect_df_filled_formulae %>% 
   rename(long_name = NA.,
          short_name = NA..1,
          life_stage_size = NA..2,
@@ -149,7 +149,27 @@ insect_names_final <- insect_df_filled_formulae %>%
   fill(long_name)
 
 
-insect_names_final %>% 
+## pull out numbers
+insect_size_life <- insect_renamed %>% 
+  ## create numbers (and correct any mm to cm)
+  mutate(body_length  = parse_number(life_stage_size),
+         is_mm = str_detect(life_stage_size, ".*mm"),
+         body_length = if_else(is_mm, body_length / 10, body_length)) %>% 
+  ## pull out the categories (by ignoring numbers)
+  mutate(body_category = str_replace(life_stage_size, "[0-9\\.]+[\\scm]{0,3}", ""),
+         body_category = str_replace(body_category, "larvae|pupae", ""),
+         body_category = str_replace_all(body_category, "\\(|\\)", ""),
+         body_category = body_category %>% str_trim %>% tolower,
+         body_category = if_else(body_category == "", NA_character_, body_category)) %>% 
+  ## finally, yank out the life history stage
+  mutate(life_stage = str_extract(life_stage_size, "larv\\w+|pup\\w+")) %>% 
+  tbl_df %>% 
+  select(-is_mm, -life_stage_size) %>% 
+  select(sp_code, long_name, short_name,
+         body_length, body_category, life_stage, 
+         average_percapita_biomass, estimating_formula, comment)
+
+insect_size_life %>% 
   write_csv("data/insect_names_final.csv")
 
 # finally the abundance data ----------------------------------------------

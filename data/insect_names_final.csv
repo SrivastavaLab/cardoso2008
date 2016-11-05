@@ -1,154 +1,154 @@
-sp_code,long_name,short_name,life_stage_size,average_percapita_biomass,comment,estimating_formula
-sp_1,Anopheles bellator,Anopheles sp A,NA,4e-5,used culicidae sp E value,NA
-sp_2,Aquatic mite sp A (Large orange),Aquatic mite sp A (Large orange),NA,7e-6,Caribbean data from Mike Richardson (MR),0.0066*0.001
-sp_3,Aquatic mite sp B (small orange),Aquatic mite sp B (small orange),NA,7e-6,NA,0.0066*0.001
-sp_4,Aquatic mite sp C (black),Aquatic mite sp C (black),NA,7e-6,NA,0.0066*0.001
-sp_5,Sciaridae sp.,Black-headed Diptera sp E,larvae,1.21e-4,NA,NA
-sp_6,Sciaridae sp.,Black-headed Diptera sp E,pupae,1.21e-4,NA,NA
-sp_7,Phylloicus bromeliarum ,Caddisfly sp A,NA,3.85e-4,NA,NA
-sp_8,Bezzia sp. 1 ,Ceratopogonid sp A (white),NA,1e-4,used ceratopogonid sp B value,NA
-sp_9,Bezzia sp. 2 ,Ceratopogonid sp B (red),NA,1e-4,NA,NA
-sp_10,Metriocnemus sp.,Chironomid sp H (grey),NA,6.8e-5,used sp G vlaue,NA
-sp_11,"Stenochironomus subgenus petalopholeus (leaf miner, green leaves or those that just fallen)",Chironomid sp J (the cobra),NA,6.8e-5,used sp G value,NA
-sp_12,"Corethrellidae sp A (needs taxonomist, may be same as B/C/D)",Corethrellidae sp A,NA,6e-5,NA,NA
-sp_13,Corethrellidae sp B,Corethrellidae sp B,NA,6e-5,NA,NA
-sp_14,Corethrellidae sp C,Corethrellidae sp C,NA,6e-5,NA,NA
-sp_15,Corethrellidae sp D,Corethrellidae sp D,NA,6e-5,NA,NA
-sp_16,"Phoniomyia spp. (lumped P. edwardsi, P. mulhensi, P. theobaldi, Culicidae sp. A + F)",Culicidae sp A (hairy siphon),larvae,4e-5,used culidae sp e value,NA
-sp_17,"Phoniomyia spp. (lumped P. edwardsi, P. mulhensi, P. theobaldi, Culicidae sp. A + F)",Culicidae sp A (hairy siphon),pupae,4e-5,NA,NA
-sp_18,Culex (Microculex) spp.,Culicidae sp B/C/D/E/G/H/I (taxonomist unable to resolve further),larvae,4e-5,NA,NA
-sp_19,Culex (Microculex) spp.,Culicidae sp B/C/D/E/G/H/I (taxonomist unable to resolve further),pupae,4e-5,NA,NA
-sp_20,Wyeomyia spp.,"Culicidae sp J(yellow-silver, reddish setae)",larvae,4e-5,NA,NA
-sp_21,Wyeomyia spp.,NA,pupae,4e-5,NA,NA
-sp_22,Aedes albopictus,"Culicidae sp K (blue, fringed siphon)",NA,4e-5,NA,NA
-sp_23,?Dasyhelea sp. ,Dasyhelea (?),NA,1e-4,use ceratopogonid sp B value,NA
-sp_24,Muscomorpha sp. 1,Diptera sp A (frilled oval),NA,8.4e-5,NA,NA
-sp_25,Ephydridae sp. 1,Diptera sp B (orange stretchy),larvae,8.4e-5,NA,NA
-sp_26,Ephydridae sp. 1,Diptera sp B (orange stretchy),pupae,8.4e-5,NA,NA
-sp_27,Ephydridae sp. 2,Diptera sp C (white harness),NA,8.4e-5,NA,NA
-sp_28,Empididae sp. 1,Diptera sp D (caudal setae),NA,8.4e-5,NA,NA
-sp_29,Empididae sp 2 (a few Muscidae sp mixed in),Diptera sp F,NA,8.4e-5,NA,NA
-sp_30,Dolichopodidae sp.,Diptera sp G (hybrid),NA,0.00101,Assumed same as a medium tipulid,NA
-sp_31,?Drosophilidae sp. A ,Diptera sp H (penguin),NA,8.4e-5,NA,NA
-sp_32,Olbiogaster sp.,Diptera sp I (pinhead),1.1 cm,8.4e-5,NA,NA
-sp_33,Tabanidae sp. (=Diptera sp J),Diptera sp J (dark yellow),NA,0.0097,Assumed a med tabanid,NA
-sp_34,Cecidomyiadae sp 1 (a few Empididae sp 3 mixed in),Diptera sp K (bright + orange),NA,8.4e-5,NA,NA
-sp_35,Tipulidae sp. (=Diptera sp L),Diptera sp L,NA,0.00101,Assumed a med tipulid,NA
-sp_36,Leech sp A (green dots),Leech sp A (green dots),NA,5.75e-4,NA,NA
-sp_37,Leech sp B (black),Leech sp B (black),NA,5.75e-4,NA,NA
-sp_38,Tubificidae sp. ,Oligochate (white),NA,5e-5,Used PR average value ,NA
-sp_39,Elpidium bromeliarum,Ostracod sp A (brown) ,NA,6.3e-5,NA,NA
-sp_40,Callistocypris mckenziei,Ostracod sp B (white) ,NA,6.3e-5,NA,NA
-sp_41,Psychodid sp A (pigpen),Psychodid sp A (pigpen),larvae,7.89e-4,NA,NA
-sp_42,Psychodid sp A (pigpen),Psychodid sp A (pigpen),pupae,1.1e-4,NA,NA
-sp_43,Psychodid sp B+C (same species),Psychodid sp B+C (same species),NA,7.89e-4,NA,NA
-sp_44,Psychodid sp D,Psychodid sp D,NA,7.89e-4,NA,NA
-sp_45,Psychodid sp E,Psychodid sp E,NA,7.89e-4,NA,NA
-sp_46,Psychodid sp F+G (same species),Psychodid sp F+G (same species),NA,7.89e-4,NA,NA
-sp_47,Polypedium sp.1,Red chironomid sp A (eyes touch),larvae,5.4e-5,NA,NA
-sp_48,Polypedium sp.1,Red chironomid sp A (eyes touch),pupae,5.4e-5,NA,NA
-sp_49,Polypedium sp.2,Red chironomid sp B (no collar),larvae,5.4e-5,NA,NA
-sp_50,Polypedium sp.2,Red chironomid sp B (no collar),pupae,5.4e-5,NA,NA
-sp_51,Chironomus aff. detriticula,Red chironomid sp D (tubercules),larvae,1.74e-4,NA,NA
-sp_52,Chironomus aff. detriticula,Red chironomid sp D (tubercules),pupae,1.74e-4,NA,NA
-sp_53,Tanytarsus sp.,Red chironomid sp G (bunny ears),NA,6.8e-5,NA,NA
-sp_54,Scyrtes sp. 1,Scirtid sp A (normal),tiny,1e-5,Based on Costa Rica scirtid,NA
-sp_55,Scyrtes sp. 1,Scirtid sp A (normal),small,5.6e-5,NA,NA
-sp_56,Scyrtes sp. 1,Scirtid sp A (normal),med,2.48e-4,NA,NA
-sp_57,Scyrtes sp. 1,Scirtid sp A (normal),med-large,4.69e-4,"halfway between med and large masses
-",(D57+D59)/2
-sp_58,Scyrtes sp. 1,Scirtid sp A (normal),large,6.89e-4,NA,NA
-sp_59,Scyrtes sp. 2,Scirtid sp B (black-tipped),small,5.6e-5,Used value for small scirtid A,NA
-sp_60,Scyrtes sp. 2,Scirtid sp B (black-tipped),med,2.48e-4,Used value for med scirtid A,NA
-sp_61,Scyrtes sp. 2,Scirtid sp B (black-tipped),large,9.17e-4,NA,NA
-sp_62,Scyrtes sp. 2,Scirtid sp B (black-tipped),x large,0.00167,"assumed x large was 10 mm, based on PR eqn",0.001*EXP(LN(0.0073)+2.3595*LN(10))
-sp_63,Scyrtes sp. 2,Scirtid sp B (black-tipped),xx large,0.002568,"assumed xx large was 12 mm, based on PR eqn",0.001*EXP(LN(0.0073)+2.3595*LN(12))
-sp_64,aff. Copestilum sp.,Syrphid sp A (short siphon),small,0.006908,based on CR fresh mass * 0.2 (empirical dry/wet ratio for diptera from MR),0.2*(0.0906*0.4-0.0017)
-sp_65,aff. Copestilum sp.,Syrphid sp A (short siphon),med,0.012344,based on CR fresh mass * 0.2 (empirical dry/wet ratio for diptera from MR),0.2*(0.0906*0.7-0.0017)
-sp_66,aff. Copestilum sp.,Syrphid sp A (short siphon),large (1.5 cm),0.019592,based on CR fresh mass * 0.2 (empirical dry/wet ratio for diptera from MR),0.2*(0.0906*1.1-0.0017)
-sp_67,aff. Copestilum sp.,Syrphid sp B (pink),1.4 cm,0.0065,NA,NA
-sp_68,aff. Copestilum sp.,Syrphid sp C (delicate),0.6 cm,0.010532,based on CR fresh mass * 0.2 (empirical dry/wet ratio for diptera from MR),0.2*(0.0906*0.6-0.0017)
-sp_69,aff. Copestilum sp.,Syrphid sp D (fringed),0.700000,0.012344,Used CR mass corrected for dry/wet mass ratio,0.2*(0.0906*C70-0.0017)
-sp_70,aff. Copestilum sp.,Syrphid sp D (fringed),0.800000,0.014156,Used CR mass corrected for dry/wet mass ratio,0.2*(0.0906*C71-0.0017)
-sp_71,aff. Copestilum sp.,Syrphid sp D (fringed),1.200000,0.021404,Used CR mass corrected for dry/wet mass ratio,0.2*(0.0906*C72-0.0017)
-sp_72,aff. Copestilum sp.,Syrphid sp D (fringed),1.700000,0.030464,Used CR mass corrected for dry/wet mass ratio,0.2*(0.0906*C73-0.0017)
-sp_73,Tabanid sp A,Tabanid sp A,NA,0.002512,Used value for med tabanid,0.2*(0.0906*0.6-0.0418)
-sp_74,Tabanid sp A,Tabanid sp A,6 mm,0.002512,"based on CR eqn, corrected for dry/wet mass ratio using MR's data",0.2*(0.0906*0.6-0.0418)
-sp_75,Tabanid sp A,Tabanid sp A,1 cm,0.00976,"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data",0.2*(0.0906*1-0.0418)
-sp_76,Tabanid sp A,"Tabanid sp A (white, medium)",1.300000,0.0097,NA,NA
-sp_77,Tabanid sp A,"Tabanid sp A (white, medium-large)",2.000000,0.02788,"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data",0.2*(0.0906*2-0.0418)
-sp_78,Tabanid sp A,"Tabanid sp A (white, large)",2.200000,0.031504,"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data",0.2*(0.0906*2.2-0.0418)
-sp_79,"Tabanid spB (green, small-med)","Tabanid spB (green, small-med)",1.100000,0.011572,"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data",0.2*(0.0906*1.1-0.0418)
-sp_80,"Tabanid spB (green, small-med)",Tabanid spB (green),Large,0.058684,"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data",0.2*(0.0906*3.7-0.0418)
-sp_81,"Tabanid spB (green, small-med)",Tabanid spB (green),Med,0.0097,Used value for med tabanid,NA
-sp_82,Monopelopia aff caraguata,Tanypodine chironomid sp F+I (same species),NA,1.4e-5,NA,NA
-sp_83,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,xsmall,1.75e-4,NA,NA
-sp_84,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,small,2.25e-4,NA,NA
-sp_85,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,small-med,8e-4,NA,NA
-sp_86,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,med,0.001961,"Based on MR eqn from Caribbean, calibrates perfectly to Cardoso smaller sizes, med=1.4 cm in CR
-",0.001*EXP(LN(0.0033)+2.4202*LN(14))
-sp_87,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,med-large,0.003137,"see ""med"" comment, med-large= 1.7cm in CR",0.001*EXP(LN(0.0033)+2.4202*LN(17))
-sp_88,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,large,0.004648,"see ""med"" comment, large =2.0cm in CR
-",0.001*EXP(LN(0.0033)+2.4202*LN(20))
-sp_89,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,Huge,0.005854,"see ""med"" comment, very large = 2.2 cm in CR",0.001*EXP(LN(0.0033)+2.4202*LN(22))
-sp_90,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,pupae,0.005854,assumed same mass as very large larva,0.001*EXP(LN(0.0033)+2.4202*LN(22))
-sp_91,Dolichopodidae spA,Dolichopodidae spA (Thick),Huge,0.007,Arbitrary value,NA
-sp_92,Orthocladiinae sp.2 with some Orthocladiinae sp. 1 mixed in,White chironomid sp C,larvae,3.8e-5,NA,NA
-sp_93,Orthocladiinae sp.2 with some Orthocladiinae sp. 1 mixed in,White chironomid sp C,pupae,3.8e-5,NA,NA
-sp_94,?Pseudochironomus,White chironomid sp K (tiny second eye),NA,3.8e-5,NA,NA
-sp_95, Leptagrion andromache,Zygopter sp A (striped),0.150000,2.8e-5,NA,EXP(LN(0.0033)+2.5077*LN(C96))
-sp_96, Leptagrion andromache,Zygopter sp A (striped),0.200000,5.8e-5,NA,EXP(LN(0.0033)+2.5077*LN(C97))
-sp_97, Leptagrion andromache,Zygopter sp A (striped),0.250000,1.02e-4,NA,EXP(LN(0.0033)+2.5077*LN(C98))
-sp_98, Leptagrion andromache,Zygopter sp A (striped),0.300000,1.61e-4,NA,EXP(LN(0.0033)+2.5077*LN(C99))
-sp_99, Leptagrion andromache,Zygopter sp A (striped),0.350000,2.37e-4,NA,EXP(LN(0.0033)+2.5077*LN(C100))
-sp_100, Leptagrion andromache,Zygopter sp A (striped),0.400000,3.32e-4,NA,EXP(LN(0.0033)+2.5077*LN(C101))
-sp_101, Leptagrion andromache,Zygopter sp A (striped),0.500000,5.8e-4,NA,EXP(LN(0.0033)+2.5077*LN(C102))
-sp_102, Leptagrion andromache,Zygopter sp A (striped),0.550000,7.37e-4,NA,EXP(LN(0.0033)+2.5077*LN(C103))
-sp_103, Leptagrion andromache,Zygopter sp A (striped),0.600000,9.17e-4,NA,EXP(LN(0.0033)+2.5077*LN(C104))
-sp_104, Leptagrion andromache,Zygopter sp A (striped),0.700000,0.001349,NA,EXP(LN(0.0033)+2.5077*LN(C105))
-sp_105, Leptagrion andromache,Zygopter sp A (striped),0.800000,0.001886,NA,EXP(LN(0.0033)+2.5077*LN(C106))
-sp_106, Leptagrion andromache,Zygopter sp A (striped),0.900000,0.002534,NA,EXP(LN(0.0033)+2.5077*LN(C107))
-sp_107, Leptagrion andromache,Zygopter sp A (striped),1.000000,0.0033,NA,EXP(LN(0.0033)+2.5077*LN(C108))
-sp_108, Leptagrion andromache,Zygopter sp A (striped),1.100000,0.004191,NA,EXP(LN(0.0033)+2.5077*LN(C109))
-sp_109, Leptagrion andromache,Zygopter sp A (striped),1.200000,0.005213,NA,EXP(LN(0.0033)+2.5077*LN(C110))
-sp_110, Leptagrion andromache,Zygopter sp A (striped),1.300000,0.006372,NA,EXP(LN(0.0033)+2.5077*LN(C111))
-sp_111, Leptagrion andromache,Zygopter sp A (striped),1.400000,0.007673,NA,EXP(LN(0.0033)+2.5077*LN(C112))
-sp_112, Leptagrion andromache,Zygopter sp A (striped),1.500000,0.009122,NA,EXP(LN(0.0033)+2.5077*LN(C113))
-sp_113, Leptagrion andromache,Zygopter sp A (striped),1.600000,0.010725,NA,EXP(LN(0.0033)+2.5077*LN(C114))
-sp_114, Leptagrion andromache,Zygopter sp A (striped),1.700000,0.012486,NA,EXP(LN(0.0033)+2.5077*LN(C115))
-sp_115, Leptagrion andromache,Zygopter sp A (striped),1.800000,0.01441,NA,EXP(LN(0.0033)+2.5077*LN(C116))
-sp_116," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.200000,5.8e-5,NA,EXP(LN(0.0033)+2.5077*LN(C117))
-sp_117," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.250000,1.02e-4,NA,EXP(LN(0.0033)+2.5077*LN(C118))
-sp_118," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.300000,1.61e-4,NA,EXP(LN(0.0033)+2.5077*LN(C119))
-sp_119," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.350000,2.37e-4,NA,EXP(LN(0.0033)+2.5077*LN(C120))
-sp_120," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.400000,3.32e-4,NA,EXP(LN(0.0033)+2.5077*LN(C121))
-sp_121," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.500000,5.8e-4,NA,EXP(LN(0.0033)+2.5077*LN(C122))
-sp_122," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.600000,9.17e-4,NA,EXP(LN(0.0033)+2.5077*LN(C123))
-sp_123," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.700000,0.001349,NA,EXP(LN(0.0033)+2.5077*LN(C124))
-sp_124," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.800000,0.001886,NA,EXP(LN(0.0033)+2.5077*LN(C125))
-sp_125," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.900000,0.002534,NA,EXP(LN(0.0033)+2.5077*LN(C126))
-sp_126," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.000000,0.0033,NA,EXP(LN(0.0033)+2.5077*LN(C127))
-sp_127," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.100000,0.004191,NA,EXP(LN(0.0033)+2.5077*LN(C128))
-sp_128," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.200000,0.005213,NA,EXP(LN(0.0033)+2.5077*LN(C129))
-sp_129," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.300000,0.006372,NA,EXP(LN(0.0033)+2.5077*LN(C130))
-sp_130," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.400000,0.007673,NA,EXP(LN(0.0033)+2.5077*LN(C131))
-sp_131," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.500000,0.009122,NA,EXP(LN(0.0033)+2.5077*LN(C132))
-sp_132," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.600000,0.010725,NA,EXP(LN(0.0033)+2.5077*LN(C133))
-sp_133," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.700000,0.012486,NA,EXP(LN(0.0033)+2.5077*LN(C134))
-sp_134," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.800000,0.01441,NA,EXP(LN(0.0033)+2.5077*LN(C135))
-sp_135," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),2.000000,0.018768,NA,EXP(LN(0.0033)+2.5077*LN(C136))
-sp_136,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.200000,5.8e-5,NA,EXP(LN(0.0033)+2.5077*LN(C137))
-sp_137,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.250000,1.02e-4,NA,EXP(LN(0.0033)+2.5077*LN(C138))
-sp_138,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.300000,1.61e-4,NA,EXP(LN(0.0033)+2.5077*LN(C139))
-sp_139,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.400000,3.32e-4,NA,EXP(LN(0.0033)+2.5077*LN(C140))
-sp_140,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.500000,5.8e-4,NA,EXP(LN(0.0033)+2.5077*LN(C141))
-sp_141,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.550000,7.37e-4,NA,EXP(LN(0.0033)+2.5077*LN(C142))
-sp_142,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.600000,9.17e-4,NA,EXP(LN(0.0033)+2.5077*LN(C143))
-sp_143,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.700000,0.001349,NA,EXP(LN(0.0033)+2.5077*LN(C144))
-sp_144,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.800000,0.001886,NA,EXP(LN(0.0033)+2.5077*LN(C145))
-sp_145,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.900000,0.002534,NA,EXP(LN(0.0033)+2.5077*LN(C146))
-sp_146,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),1.500000,0.009122,NA,EXP(LN(0.0033)+2.5077*LN(C147))
-sp_147,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),1.550000,0.009904,NA,EXP(LN(0.0033)+2.5077*LN(C148))
-sp_148,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),1.600000,0.010725,NA,EXP(LN(0.0033)+2.5077*LN(C149))
-sp_149,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),1.650000,0.011585,NA,EXP(LN(0.0033)+2.5077*LN(C150))
-sp_150,Leptagrion elongatum (C and D - the same species),Zygoptera sp C (Harlequin),1.900000,0.016502,NA,EXP(LN(0.0033)+2.5077*LN(C151))
+sp_code,long_name,short_name,body_length,body_category,life_stage,average_percapita_biomass,estimating_formula,comment
+sp_1,Anopheles bellator,Anopheles sp A,NA,NA,NA,4e-5,NA,used culicidae sp E value
+sp_2,Aquatic mite sp A (Large orange),Aquatic mite sp A (Large orange),NA,NA,NA,7e-6,0.0066*0.001,Caribbean data from Mike Richardson (MR)
+sp_3,Aquatic mite sp B (small orange),Aquatic mite sp B (small orange),NA,NA,NA,7e-6,0.0066*0.001,NA
+sp_4,Aquatic mite sp C (black),Aquatic mite sp C (black),NA,NA,NA,7e-6,0.0066*0.001,NA
+sp_5,Sciaridae sp.,Black-headed Diptera sp E,NA,NA,larvae,1.21e-4,NA,NA
+sp_6,Sciaridae sp.,Black-headed Diptera sp E,NA,NA,pupae,1.21e-4,NA,NA
+sp_7,Phylloicus bromeliarum ,Caddisfly sp A,NA,NA,NA,3.85e-4,NA,NA
+sp_8,Bezzia sp. 1 ,Ceratopogonid sp A (white),NA,NA,NA,1e-4,NA,used ceratopogonid sp B value
+sp_9,Bezzia sp. 2 ,Ceratopogonid sp B (red),NA,NA,NA,1e-4,NA,NA
+sp_10,Metriocnemus sp.,Chironomid sp H (grey),NA,NA,NA,6.8e-5,NA,used sp G vlaue
+sp_11,"Stenochironomus subgenus petalopholeus (leaf miner, green leaves or those that just fallen)",Chironomid sp J (the cobra),NA,NA,NA,6.8e-5,NA,used sp G value
+sp_12,"Corethrellidae sp A (needs taxonomist, may be same as B/C/D)",Corethrellidae sp A,NA,NA,NA,6e-5,NA,NA
+sp_13,Corethrellidae sp B,Corethrellidae sp B,NA,NA,NA,6e-5,NA,NA
+sp_14,Corethrellidae sp C,Corethrellidae sp C,NA,NA,NA,6e-5,NA,NA
+sp_15,Corethrellidae sp D,Corethrellidae sp D,NA,NA,NA,6e-5,NA,NA
+sp_16,"Phoniomyia spp. (lumped P. edwardsi, P. mulhensi, P. theobaldi, Culicidae sp. A + F)",Culicidae sp A (hairy siphon),NA,NA,larvae,4e-5,NA,used culidae sp e value
+sp_17,"Phoniomyia spp. (lumped P. edwardsi, P. mulhensi, P. theobaldi, Culicidae sp. A + F)",Culicidae sp A (hairy siphon),NA,NA,pupae,4e-5,NA,NA
+sp_18,Culex (Microculex) spp.,Culicidae sp B/C/D/E/G/H/I (taxonomist unable to resolve further),NA,NA,larvae,4e-5,NA,NA
+sp_19,Culex (Microculex) spp.,Culicidae sp B/C/D/E/G/H/I (taxonomist unable to resolve further),NA,NA,pupae,4e-5,NA,NA
+sp_20,Wyeomyia spp.,"Culicidae sp J(yellow-silver, reddish setae)",NA,NA,larvae,4e-5,NA,NA
+sp_21,Wyeomyia spp.,NA,NA,NA,pupae,4e-5,NA,NA
+sp_22,Aedes albopictus,"Culicidae sp K (blue, fringed siphon)",NA,NA,NA,4e-5,NA,NA
+sp_23,?Dasyhelea sp. ,Dasyhelea (?),NA,NA,NA,1e-4,NA,use ceratopogonid sp B value
+sp_24,Muscomorpha sp. 1,Diptera sp A (frilled oval),NA,NA,NA,8.4e-5,NA,NA
+sp_25,Ephydridae sp. 1,Diptera sp B (orange stretchy),NA,NA,larvae,8.4e-5,NA,NA
+sp_26,Ephydridae sp. 1,Diptera sp B (orange stretchy),NA,NA,pupae,8.4e-5,NA,NA
+sp_27,Ephydridae sp. 2,Diptera sp C (white harness),NA,NA,NA,8.4e-5,NA,NA
+sp_28,Empididae sp. 1,Diptera sp D (caudal setae),NA,NA,NA,8.4e-5,NA,NA
+sp_29,Empididae sp 2 (a few Muscidae sp mixed in),Diptera sp F,NA,NA,NA,8.4e-5,NA,NA
+sp_30,Dolichopodidae sp.,Diptera sp G (hybrid),NA,NA,NA,0.00101,NA,Assumed same as a medium tipulid
+sp_31,?Drosophilidae sp. A ,Diptera sp H (penguin),NA,NA,NA,8.4e-5,NA,NA
+sp_32,Olbiogaster sp.,Diptera sp I (pinhead),1.1,NA,NA,8.4e-5,NA,NA
+sp_33,Tabanidae sp. (=Diptera sp J),Diptera sp J (dark yellow),NA,NA,NA,0.0097,NA,Assumed a med tabanid
+sp_34,Cecidomyiadae sp 1 (a few Empididae sp 3 mixed in),Diptera sp K (bright + orange),NA,NA,NA,8.4e-5,NA,NA
+sp_35,Tipulidae sp. (=Diptera sp L),Diptera sp L,NA,NA,NA,0.00101,NA,Assumed a med tipulid
+sp_36,Leech sp A (green dots),Leech sp A (green dots),NA,NA,NA,5.75e-4,NA,NA
+sp_37,Leech sp B (black),Leech sp B (black),NA,NA,NA,5.75e-4,NA,NA
+sp_38,Tubificidae sp. ,Oligochate (white),NA,NA,NA,5e-5,NA,Used PR average value 
+sp_39,Elpidium bromeliarum,Ostracod sp A (brown) ,NA,NA,NA,6.3e-5,NA,NA
+sp_40,Callistocypris mckenziei,Ostracod sp B (white) ,NA,NA,NA,6.3e-5,NA,NA
+sp_41,Psychodid sp A (pigpen),Psychodid sp A (pigpen),NA,NA,larvae,7.89e-4,NA,NA
+sp_42,Psychodid sp A (pigpen),Psychodid sp A (pigpen),NA,NA,pupae,1.1e-4,NA,NA
+sp_43,Psychodid sp B+C (same species),Psychodid sp B+C (same species),NA,NA,NA,7.89e-4,NA,NA
+sp_44,Psychodid sp D,Psychodid sp D,NA,NA,NA,7.89e-4,NA,NA
+sp_45,Psychodid sp E,Psychodid sp E,NA,NA,NA,7.89e-4,NA,NA
+sp_46,Psychodid sp F+G (same species),Psychodid sp F+G (same species),NA,NA,NA,7.89e-4,NA,NA
+sp_47,Polypedium sp.1,Red chironomid sp A (eyes touch),NA,NA,larvae,5.4e-5,NA,NA
+sp_48,Polypedium sp.1,Red chironomid sp A (eyes touch),NA,NA,pupae,5.4e-5,NA,NA
+sp_49,Polypedium sp.2,Red chironomid sp B (no collar),NA,NA,larvae,5.4e-5,NA,NA
+sp_50,Polypedium sp.2,Red chironomid sp B (no collar),NA,NA,pupae,5.4e-5,NA,NA
+sp_51,Chironomus aff. detriticula,Red chironomid sp D (tubercules),NA,NA,larvae,1.74e-4,NA,NA
+sp_52,Chironomus aff. detriticula,Red chironomid sp D (tubercules),NA,NA,pupae,1.74e-4,NA,NA
+sp_53,Tanytarsus sp.,Red chironomid sp G (bunny ears),NA,NA,NA,6.8e-5,NA,NA
+sp_54,Scyrtes sp. 1,Scirtid sp A (normal),NA,tiny,NA,1e-5,NA,Based on Costa Rica scirtid
+sp_55,Scyrtes sp. 1,Scirtid sp A (normal),NA,small,NA,5.6e-5,NA,NA
+sp_56,Scyrtes sp. 1,Scirtid sp A (normal),NA,med,NA,2.48e-4,NA,NA
+sp_57,Scyrtes sp. 1,Scirtid sp A (normal),NA,med-large,NA,4.69e-4,(D57+D59)/2,"halfway between med and large masses
+"
+sp_58,Scyrtes sp. 1,Scirtid sp A (normal),NA,large,NA,6.89e-4,NA,NA
+sp_59,Scyrtes sp. 2,Scirtid sp B (black-tipped),NA,small,NA,5.6e-5,NA,Used value for small scirtid A
+sp_60,Scyrtes sp. 2,Scirtid sp B (black-tipped),NA,med,NA,2.48e-4,NA,Used value for med scirtid A
+sp_61,Scyrtes sp. 2,Scirtid sp B (black-tipped),NA,large,NA,9.17e-4,NA,NA
+sp_62,Scyrtes sp. 2,Scirtid sp B (black-tipped),NA,x large,NA,0.00167,0.001*EXP(LN(0.0073)+2.3595*LN(10)),"assumed x large was 10 mm, based on PR eqn"
+sp_63,Scyrtes sp. 2,Scirtid sp B (black-tipped),NA,xx large,NA,0.002568,0.001*EXP(LN(0.0073)+2.3595*LN(12)),"assumed xx large was 12 mm, based on PR eqn"
+sp_64,aff. Copestilum sp.,Syrphid sp A (short siphon),NA,small,NA,0.006908,0.2*(0.0906*0.4-0.0017),based on CR fresh mass * 0.2 (empirical dry/wet ratio for diptera from MR)
+sp_65,aff. Copestilum sp.,Syrphid sp A (short siphon),NA,med,NA,0.012344,0.2*(0.0906*0.7-0.0017),based on CR fresh mass * 0.2 (empirical dry/wet ratio for diptera from MR)
+sp_66,aff. Copestilum sp.,Syrphid sp A (short siphon),1.5,large,NA,0.019592,0.2*(0.0906*1.1-0.0017),based on CR fresh mass * 0.2 (empirical dry/wet ratio for diptera from MR)
+sp_67,aff. Copestilum sp.,Syrphid sp B (pink),1.4,NA,NA,0.0065,NA,NA
+sp_68,aff. Copestilum sp.,Syrphid sp C (delicate),0.6,NA,NA,0.010532,0.2*(0.0906*0.6-0.0017),based on CR fresh mass * 0.2 (empirical dry/wet ratio for diptera from MR)
+sp_69,aff. Copestilum sp.,Syrphid sp D (fringed),0.7,NA,NA,0.012344,0.2*(0.0906*C70-0.0017),Used CR mass corrected for dry/wet mass ratio
+sp_70,aff. Copestilum sp.,Syrphid sp D (fringed),0.8,NA,NA,0.014156,0.2*(0.0906*C71-0.0017),Used CR mass corrected for dry/wet mass ratio
+sp_71,aff. Copestilum sp.,Syrphid sp D (fringed),1.2,NA,NA,0.021404,0.2*(0.0906*C72-0.0017),Used CR mass corrected for dry/wet mass ratio
+sp_72,aff. Copestilum sp.,Syrphid sp D (fringed),1.7,NA,NA,0.030464,0.2*(0.0906*C73-0.0017),Used CR mass corrected for dry/wet mass ratio
+sp_73,Tabanid sp A,Tabanid sp A,NA,NA,NA,0.002512,0.2*(0.0906*0.6-0.0418),Used value for med tabanid
+sp_74,Tabanid sp A,Tabanid sp A,0.6,NA,NA,0.002512,0.2*(0.0906*0.6-0.0418),"based on CR eqn, corrected for dry/wet mass ratio using MR's data"
+sp_75,Tabanid sp A,Tabanid sp A,1.0,NA,NA,0.00976,0.2*(0.0906*1-0.0418),"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data"
+sp_76,Tabanid sp A,"Tabanid sp A (white, medium)",1.3,NA,NA,0.0097,NA,NA
+sp_77,Tabanid sp A,"Tabanid sp A (white, medium-large)",2.0,NA,NA,0.02788,0.2*(0.0906*2-0.0418),"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data"
+sp_78,Tabanid sp A,"Tabanid sp A (white, large)",2.2,NA,NA,0.031504,0.2*(0.0906*2.2-0.0418),"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data"
+sp_79,"Tabanid spB (green, small-med)","Tabanid spB (green, small-med)",1.1,NA,NA,0.011572,0.2*(0.0906*1.1-0.0418),"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data"
+sp_80,"Tabanid spB (green, small-med)",Tabanid spB (green),NA,large,NA,0.058684,0.2*(0.0906*3.7-0.0418),"based on CR eqn, using dry/wet correction factor of 0.2 from MR's data"
+sp_81,"Tabanid spB (green, small-med)",Tabanid spB (green),NA,med,NA,0.0097,NA,Used value for med tabanid
+sp_82,Monopelopia aff caraguata,Tanypodine chironomid sp F+I (same species),NA,NA,NA,1.4e-5,NA,NA
+sp_83,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,NA,xsmall,NA,1.75e-4,NA,NA
+sp_84,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,NA,small,NA,2.25e-4,NA,NA
+sp_85,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,NA,small-med,NA,8e-4,NA,NA
+sp_86,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,NA,med,NA,0.001961,0.001*EXP(LN(0.0033)+2.4202*LN(14)),"Based on MR eqn from Caribbean, calibrates perfectly to Cardoso smaller sizes, med=1.4 cm in CR
+"
+sp_87,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,NA,med-large,NA,0.003137,0.001*EXP(LN(0.0033)+2.4202*LN(17)),"see ""med"" comment, med-large= 1.7cm in CR"
+sp_88,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,NA,large,NA,0.004648,0.001*EXP(LN(0.0033)+2.4202*LN(20)),"see ""med"" comment, large =2.0cm in CR
+"
+sp_89,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,NA,huge,NA,0.005854,0.001*EXP(LN(0.0033)+2.4202*LN(22)),"see ""med"" comment, very large = 2.2 cm in CR"
+sp_90,Trentepohlia sp.,Tipulid sp A (grey) + B (yellow): same species,NA,NA,pupae,0.005854,0.001*EXP(LN(0.0033)+2.4202*LN(22)),assumed same mass as very large larva
+sp_91,Dolichopodidae spA,Dolichopodidae spA (Thick),NA,huge,NA,0.007,NA,Arbitrary value
+sp_92,Orthocladiinae sp.2 with some Orthocladiinae sp. 1 mixed in,White chironomid sp C,NA,NA,larvae,3.8e-5,NA,NA
+sp_93,Orthocladiinae sp.2 with some Orthocladiinae sp. 1 mixed in,White chironomid sp C,NA,NA,pupae,3.8e-5,NA,NA
+sp_94,?Pseudochironomus,White chironomid sp K (tiny second eye),NA,NA,NA,3.8e-5,NA,NA
+sp_95, Leptagrion andromache,Zygopter sp A (striped),0.15000000000000002,NA,NA,2.8e-5,EXP(LN(0.0033)+2.5077*LN(C96)),NA
+sp_96, Leptagrion andromache,Zygopter sp A (striped),0.2,NA,NA,5.8e-5,EXP(LN(0.0033)+2.5077*LN(C97)),NA
+sp_97, Leptagrion andromache,Zygopter sp A (striped),0.25,NA,NA,1.02e-4,EXP(LN(0.0033)+2.5077*LN(C98)),NA
+sp_98, Leptagrion andromache,Zygopter sp A (striped),0.3,NA,NA,1.61e-4,EXP(LN(0.0033)+2.5077*LN(C99)),NA
+sp_99, Leptagrion andromache,Zygopter sp A (striped),0.35,NA,NA,2.37e-4,EXP(LN(0.0033)+2.5077*LN(C100)),NA
+sp_100, Leptagrion andromache,Zygopter sp A (striped),0.4,NA,NA,3.32e-4,EXP(LN(0.0033)+2.5077*LN(C101)),NA
+sp_101, Leptagrion andromache,Zygopter sp A (striped),0.5,NA,NA,5.8e-4,EXP(LN(0.0033)+2.5077*LN(C102)),NA
+sp_102, Leptagrion andromache,Zygopter sp A (striped),0.55,NA,NA,7.37e-4,EXP(LN(0.0033)+2.5077*LN(C103)),NA
+sp_103, Leptagrion andromache,Zygopter sp A (striped),0.6,NA,NA,9.17e-4,EXP(LN(0.0033)+2.5077*LN(C104)),NA
+sp_104, Leptagrion andromache,Zygopter sp A (striped),0.7,NA,NA,0.001349,EXP(LN(0.0033)+2.5077*LN(C105)),NA
+sp_105, Leptagrion andromache,Zygopter sp A (striped),0.8,NA,NA,0.001886,EXP(LN(0.0033)+2.5077*LN(C106)),NA
+sp_106, Leptagrion andromache,Zygopter sp A (striped),0.9,NA,NA,0.002534,EXP(LN(0.0033)+2.5077*LN(C107)),NA
+sp_107, Leptagrion andromache,Zygopter sp A (striped),1.0,NA,NA,0.0033,EXP(LN(0.0033)+2.5077*LN(C108)),NA
+sp_108, Leptagrion andromache,Zygopter sp A (striped),1.1,NA,NA,0.004191,EXP(LN(0.0033)+2.5077*LN(C109)),NA
+sp_109, Leptagrion andromache,Zygopter sp A (striped),1.2,NA,NA,0.005213,EXP(LN(0.0033)+2.5077*LN(C110)),NA
+sp_110, Leptagrion andromache,Zygopter sp A (striped),1.3,NA,NA,0.006372,EXP(LN(0.0033)+2.5077*LN(C111)),NA
+sp_111, Leptagrion andromache,Zygopter sp A (striped),1.4,NA,NA,0.007673,EXP(LN(0.0033)+2.5077*LN(C112)),NA
+sp_112, Leptagrion andromache,Zygopter sp A (striped),1.5,NA,NA,0.009122,EXP(LN(0.0033)+2.5077*LN(C113)),NA
+sp_113, Leptagrion andromache,Zygopter sp A (striped),1.6,NA,NA,0.010725,EXP(LN(0.0033)+2.5077*LN(C114)),NA
+sp_114, Leptagrion andromache,Zygopter sp A (striped),1.7,NA,NA,0.012486,EXP(LN(0.0033)+2.5077*LN(C115)),NA
+sp_115, Leptagrion andromache,Zygopter sp A (striped),1.8,NA,NA,0.01441,EXP(LN(0.0033)+2.5077*LN(C116)),NA
+sp_116," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.2,NA,NA,5.8e-5,EXP(LN(0.0033)+2.5077*LN(C117)),NA
+sp_117," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.25,NA,NA,1.02e-4,EXP(LN(0.0033)+2.5077*LN(C118)),NA
+sp_118," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.3,NA,NA,1.61e-4,EXP(LN(0.0033)+2.5077*LN(C119)),NA
+sp_119," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.35,NA,NA,2.37e-4,EXP(LN(0.0033)+2.5077*LN(C120)),NA
+sp_120," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.4,NA,NA,3.32e-4,EXP(LN(0.0033)+2.5077*LN(C121)),NA
+sp_121," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.5,NA,NA,5.8e-4,EXP(LN(0.0033)+2.5077*LN(C122)),NA
+sp_122," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.6,NA,NA,9.17e-4,EXP(LN(0.0033)+2.5077*LN(C123)),NA
+sp_123," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.7,NA,NA,0.001349,EXP(LN(0.0033)+2.5077*LN(C124)),NA
+sp_124," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.8,NA,NA,0.001886,EXP(LN(0.0033)+2.5077*LN(C125)),NA
+sp_125," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),0.9,NA,NA,0.002534,EXP(LN(0.0033)+2.5077*LN(C126)),NA
+sp_126," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.0,NA,NA,0.0033,EXP(LN(0.0033)+2.5077*LN(C127)),NA
+sp_127," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.1,NA,NA,0.004191,EXP(LN(0.0033)+2.5077*LN(C128)),NA
+sp_128," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.2,NA,NA,0.005213,EXP(LN(0.0033)+2.5077*LN(C129)),NA
+sp_129," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.3,NA,NA,0.006372,EXP(LN(0.0033)+2.5077*LN(C130)),NA
+sp_130," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.4,NA,NA,0.007673,EXP(LN(0.0033)+2.5077*LN(C131)),NA
+sp_131," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.5,NA,NA,0.009122,EXP(LN(0.0033)+2.5077*LN(C132)),NA
+sp_132," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.6,NA,NA,0.010725,EXP(LN(0.0033)+2.5077*LN(C133)),NA
+sp_133," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.7,NA,NA,0.012486,EXP(LN(0.0033)+2.5077*LN(C134)),NA
+sp_134," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),1.8,NA,NA,0.01441,EXP(LN(0.0033)+2.5077*LN(C135)),NA
+sp_135," Leptagrion macrurum and L. bocainense (mix, Zygoptera sp B, tan)",Zygoptera sp B (tan),2.0,NA,NA,0.018768,EXP(LN(0.0033)+2.5077*LN(C136)),NA
+sp_136,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.2,NA,NA,5.8e-5,EXP(LN(0.0033)+2.5077*LN(C137)),NA
+sp_137,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.25,NA,NA,1.02e-4,EXP(LN(0.0033)+2.5077*LN(C138)),NA
+sp_138,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.3,NA,NA,1.61e-4,EXP(LN(0.0033)+2.5077*LN(C139)),NA
+sp_139,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.4,NA,NA,3.32e-4,EXP(LN(0.0033)+2.5077*LN(C140)),NA
+sp_140,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.5,NA,NA,5.8e-4,EXP(LN(0.0033)+2.5077*LN(C141)),NA
+sp_141,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.55,NA,NA,7.37e-4,EXP(LN(0.0033)+2.5077*LN(C142)),NA
+sp_142,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.6,NA,NA,9.17e-4,EXP(LN(0.0033)+2.5077*LN(C143)),NA
+sp_143,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.7,NA,NA,0.001349,EXP(LN(0.0033)+2.5077*LN(C144)),NA
+sp_144,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.8,NA,NA,0.001886,EXP(LN(0.0033)+2.5077*LN(C145)),NA
+sp_145,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),0.9,NA,NA,0.002534,EXP(LN(0.0033)+2.5077*LN(C146)),NA
+sp_146,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),1.5,NA,NA,0.009122,EXP(LN(0.0033)+2.5077*LN(C147)),NA
+sp_147,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),1.55,NA,NA,0.009904,EXP(LN(0.0033)+2.5077*LN(C148)),NA
+sp_148,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),1.6,NA,NA,0.010725,EXP(LN(0.0033)+2.5077*LN(C149)),NA
+sp_149,Leptagrion elongatum (C and D - the same species),Zygoptera sp D (orange),1.6500000000000001,NA,NA,0.011585,EXP(LN(0.0033)+2.5077*LN(C150)),NA
+sp_150,Leptagrion elongatum (C and D - the same species),Zygoptera sp C (Harlequin),1.9,NA,NA,0.016502,EXP(LN(0.0033)+2.5077*LN(C151)),NA
