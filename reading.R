@@ -8,24 +8,17 @@ library(readr)
 
 ## get data
 
-library(rdrop2)
+# library(rdrop2)
+# 
+# drop_auth()
+# 
+# 
+# 
+# drop_get("CommunityAnalysis/Data/Cardoso.2008_bromeliad_closed/Cardoso2008_WGformat_correct.xls",
+#          local_file = "raw-data/cardoso2008.xls")
 
-drop_auth()
-
-
-
-drop_get("CommunityAnalysis/Data/Cardoso.2008_bromeliad_closed/Cardoso2008_WGformat_correct.xls",
-         local_file = "raw-data/cardoso2008.xls")
-
-
-library(readxl)
-
-read_excel("raw-data/Cardoso2008_WGformat_correct.xlsx", sheet = 2)
 
 dat <- rexcel::rexcel_read_workbook("raw-data/Cardoso2008_WGformat_correct.xlsx") ##ummm this does nothing???
-
-
-dat %>% class
 
 
 # helper functions --------------------------------------------------------
@@ -50,13 +43,9 @@ matrix_to_df_firstline_header <- function(mat){
 # environmental values ----------------------------------------------------
 
 ## look at it
-dat$sheets[[3]]
+dat$sheets[[3]] 
 
 ## values?
-
-
-dat$sheets$`Environmental data`$cells %>% select(ref, value) %>% mutate(val = map(value, as.numeric)) %>% unnest(val) %>% View
-
 
 env_df <- dat$sheets$`Environmental data`$values()
 
@@ -135,11 +124,21 @@ insect_df_comments <- insect_df %>%
   select(sp_code, NA.:Biomass.avg.sp) %>% 
   mutate(Dcol_pos = dat$sheets$`Fauna - full`$lookup[2:151,4]) %>% 
   ## put in cell refs
-  mutate(ref = dat$sheets$`Fauna - full`$cells$ref[Dcol_pos]) %>% 
+  mutate(ref = dat$sheets$`Fauna - full`$cells$ref[Dcol_pos],
+         form = dat$sheets$`Fauna - full`$cells[["formula"]][Dcol_pos]) %>% 
   #left join comments
-  left_join(insect_comments %>% select(-author, -shape_id))
+  left_join(insect_comments %>% select(-author, -shape_id), by = "ref")
 
-insect_names_final <- insect_df_comments %>% 
+
+insect_df_filled_formulae <- insect_df_comments %>% 
+  replace_na(list(form = "blank")) %>% 
+  mutate(filled_form = if_else(form == "", NA_character_, form)) %>% 
+  fill(filled_form) %>% 
+  mutate(estimating_formula = if_else(form == "blank", NA_character_, filled_form)) %>% 
+  # clean up
+  select(-form, -filled_form)
+
+insect_names_final <- insect_df_filled_formulae %>% 
   rename(long_name = NA.,
          short_name = NA..1,
          life_stage_size = NA..2,
