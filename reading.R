@@ -139,14 +139,17 @@ insect_df_filled_formulae <- insect_df_comments %>%
   select(-form, -filled_form)
 
 insect_renamed <- insect_df_filled_formulae %>% 
-  rename(long_name = NA.,
-         short_name = NA..1,
+  rename(morphospecies = NA.,
+         field_name = NA..1,
          life_stage_size = NA..2,
          comment = text,
          average_percapita_biomass = Biomass.avg.sp) %>% 
   select(-Dcol_pos, -ref) %>% 
   mutate(average_percapita_biomass = as.numeric(average_percapita_biomass)) %>% 
-  fill(long_name)
+  fill(morphospecies) %>% 
+  ## fill down field_name -- missing in only one cell
+  fill(field_name)
+  
 
 
 ## pull out numbers
@@ -165,7 +168,7 @@ insect_size_life <- insect_renamed %>%
   mutate(life_stage = str_extract(life_stage_size, "larv\\w+|pup\\w+")) %>% 
   tbl_df %>% 
   select(-is_mm, -life_stage_size) %>% 
-  select(sp_code, long_name, short_name,
+  select(sp_code, morphospecies, field_name,
          body_length, body_category, life_stage, 
          average_percapita_biomass, estimating_formula, comment)
 
