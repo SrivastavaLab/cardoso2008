@@ -84,7 +84,7 @@ env_df_long_dates <- env_df_long$obs %>%
   ## some dates are in the wrong year
   mutate(collection_date_fix_yr = if_else(collection_date < ymd("2008-01-01"), collection_date + years(1), collection_date)) %>% 
   ## and some are written in an incorrect format
-  mutate(collection_date_corrected = if_else(collection_date_fix_yr > ymd("2008-03-01"), ydm(as.character(collection_date_fix_yr)), collection_date_fix_yr)) %>% 
+  mutate(date_collected = if_else(collection_date_fix_yr > ymd("2008-03-01"), ydm(as.character(collection_date_fix_yr)), collection_date_fix_yr)) %>% 
   select(-date_lubr, -date_exel, -from_exel, -collection_date, -collection_date_fix_yr, -Date)
 
 
