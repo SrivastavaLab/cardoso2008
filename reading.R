@@ -183,7 +183,7 @@ insect_abundances <- insect_df %>%
   select(sp_code, starts_with("Brom")) %>% 
   gather(Bromeliad, abundance, starts_with("Brom")) %>% 
   filter(!is.na(abundance)) %>% 
-  mutate(abundance = as.numeric(abundance)) %>% 
+  mutate(abundance = as.integer(abundance)) %>% 
   filter(abundance > 0)
 
 insect_abundances %>% 
