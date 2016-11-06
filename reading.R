@@ -170,7 +170,7 @@ insect_size_life <- insect_renamed %>%
          average_percapita_biomass, estimating_formula, comment)
 
 insect_size_life %>% 
-  write_csv("data/insect_names_final.csv")
+  write_csv("data/macroinvertebrate_names_mass.csv")
 
 # finally the abundance data ----------------------------------------------
 
