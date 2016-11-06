@@ -95,6 +95,8 @@ env_final <- env_df_long_dates %>%
          Spider_survey  = Spider.survey.) %>%
          {set_names(., names(.) %>% str_replace("\\.\\..*\\.", ""))}%>% 
          {set_names(., names(.) %>% str_replace_all("\\.", "_"))} %>% 
+  ## spaces to dots in species name
+  mutate(Bromeliad = Bromeliad %>% str_replace("\\s", "\\.")) %>% 
   mutate_each(funs(as.numeric), Actual_volume:Plant_diameter)
 
 write_csv(env_final, "data/environmental_variables.csv")
