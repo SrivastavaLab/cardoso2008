@@ -150,7 +150,9 @@ insect_renamed <- insect_df_filled_formulae %>%
   mutate(average_percapita_biomass = as.numeric(average_percapita_biomass)) %>% 
   fill(morphospecies) %>% 
   ## fill down field_name -- missing in only one cell
-  fill(field_name)
+  fill(field_name) %>% 
+  mutate(morphospecies = str_trim(morphospecies),
+         field_name = str_trim(field_name))
   
 
 
@@ -174,7 +176,7 @@ insect_size_life <- insect_renamed %>%
          body_length, body_category, life_stage, 
          average_percapita_biomass, estimating_formula, comment)
 
-insect_size_life %>% 
+insect_size_life %>%
   write_csv("data/macroinvertebrate_names_mass.csv")
 
 # finally the abundance data ----------------------------------------------
