@@ -1,0 +1,26 @@
+dataset_name,variable_name,metadata
+abundance.csv,sp_code,Unique code for every morphospecies x size category
+abundance.csv,Bromeliad,Unique code for each bromeliad
+abundance.csv,abundance,count of individuals
+environmental_variables.csv,Bromeliad,Unique code for each bromeliad
+environmental_variables.csv,Actual_volume,Volume of water found in bromeliads (ml)
+environmental_variables.csv,Maximum_volume,Maximum volume of water found in bromeliads (ml) found by subtraction from pouring a known volume into the empty plant and measuring the overflow
+environmental_variables.csv,Longest_leaf,Length of the bromeliad’s longest leaf (cm)
+environmental_variables.csv,Number_of_leaves,Number of leaves longer than 2cm
+environmental_variables.csv,Detritus,Mass of all detritus found in the bromeliad (g)
+environmental_variables.csv,Plant_height,Total height of bromeliad from rootstock to top of innermost leaf
+environmental_variables.csv,Plant_diameter,Diameter of bromeliad (cm)
+environmental_variables.csv,Spider_survey,"Is a spider present on the bromeliad? A = _Agloctenus_, C = _Corinna demersa_, NS = no spider"
+environmental_variables.csv,Notes,Field notes taken on the bromeliad
+environmental_variables.csv,date_collected,Date bromeliad was collected (yyyy/mm/dd)
+macroinvertebrate_names_mass.csv,sp_code,Unique code for every morphospecies x size category
+macroinvertebrate_names_mass.csv,morphospecies,Morphospecies name
+macroinvertebrate_names_mass.csv,field_name,Name given in the field to this morphospecies
+macroinvertebrate_names_mass.csv,body_length,body length of this individual or size category (cm)
+macroinvertebrate_names_mass.csv,body_category,body category (when ordinal length used)
+macroinvertebrate_names_mass.csv,life_stage,"macroinvertebrate life history stage, where appropriate (larvae or pupa)"
+macroinvertebrate_names_mass.csv,average_percapita_biomass,"Average per capita biomass for this size category x species combination. Frequently estimated from formulae derived from regression of dry mass on body length for other, related taxa"
+macroinvertebrate_names_mass.csv,estimating_formula,excel function used to convert length to appropriate mass for these animals
+macroinvertebrate_names_mass.csv,comment,Comments on the functional form used to perform biomass estimation
+predator_names.csv,Taxa,"Combined names for morphospecies, often lumping similar species into higher taxonomic categories"
+predator_names.csv,morphospecies,Morphospecies name
