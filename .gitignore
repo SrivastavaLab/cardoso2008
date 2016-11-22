@@ -36,3 +36,5 @@ vignettes/*.pdf
 *.DS_Store*
 
 *reuse.R
+
+*.zip
