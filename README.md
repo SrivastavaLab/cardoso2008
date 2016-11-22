@@ -1,6 +1,6 @@
 ## Survey of macroinvertebrates found in Bromeliads
-Study location: Ilha do Cardoso, São Paulo, Brasil, (25° 03' S, 47° 53' W)
-°
+Study location: Ilha do Cardoso, São Paulo, Brasil, (25° 03' S, 47° 53' W)  
+
 **If re-using this data, please cite the version which is [archived on Zenodo]()**
 
 ### Data format
